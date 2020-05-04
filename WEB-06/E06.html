@@ -1,0 +1,104 @@
+<!--
+    Arvosteltavia asioita on sisällön laatu, visuaalisuus, 
+    kuvauskielten ja CSS virheettömyys sekä ennen kaikkea 
+    responsiivisuus ja mobiiliystävällisyys! 
+    Sivulla tulee siis olla käytössä mediaqueryt ja viewport tagit. 
+    
+    Ideoita:
+    Tumma tila
+    Kuvagalleryy Responsive Image Grid https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NIMI</title>
+        <!--responsiivisuus https://www.w3schools.com/whatis/whatis_responsive.asp -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Philosopher&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="E06-style.css">
+    </head>
+    <body>
+
+        <div id="topRow">
+            <!--Yläpalkki jossa linkitys githubiin ja linkediniin-->
+            <a href="www.linkedin.com/in/noora-kuorikoski">LinkedIn</a>
+            <div id="otsikko">CV</div>
+            <a href="https://github.com/nooraelina">GitHub</a>
+        </div>
+
+        <div id="top">
+            <!--sis. bannerikuvan, otsikon, pienen alainfon-->
+            <img src="img/noora.png" alt="cvkuva" class="responsive" id="omakuva">
+
+        </div>
+
+        <div id="lowercontainer">
+            <div id="leftside" class="column">
+                <!--sis. perustietoa-->
+                <h1>Noora Kuorikoski</h1>
+                <p>dfhgfdhhgfdh </p>
+            </div>
+            
+            <div id="rightside" class="column">
+                <!--sis. esim työkokemus yms-->
+
+                <h2>Taidot</h2>
+                <table>
+                    <tr>
+                        <td>Git</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Kotlin</td>
+                        <td>Perusteet</td>
+                    </tr>
+                    <tr>
+                        <td>Lightroom</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Photoshop</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </table>
+
+                <h2>Kiinnostuksen kohteet</h2>
+                <ul>
+                    <li>Ohjelmointi</li>
+                    <li>Käytettävyys ja käyttöliittymäsuunnittelu</li>
+                    <li>Web-ohjelmointi</li>
+                    <li>Sovelluskehitys</li>
+                    <li>Kuntosalilla käynti</li>
+                    <li>Graafinen suunnittelu</li>
+                    <li>Valokuvaus</li>
+                </ul>
+                
+
+            </div>
+        </div>
+        <div id="down">
+            <!--sis. kuvagalleria-->
+
+        </div>
+
+        <div id="under">
+            <!--sis. alalinkit jne (tarviiko?)-->
+        </div>
+
+        <!--Vikaksi scripti jotta sivu lukee eka id jne ja osaa sitten yhdistää tänne.-->
+        <script src="E06-script.js"></script>
+
+    </body>
+</html>
