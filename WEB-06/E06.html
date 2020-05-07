@@ -11,35 +11,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>NIMI</title>
-        <!--responsiivisuus https://www.w3schools.com/whatis/whatis_responsive.asp -->
+        <title>Noora</title>
+        <!--responsiivisuus https://www.w3schools.com/whatis/whatis_responsive.asp 
+        Fontit: Open Sans, Dosis, Anton
+        -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Philosopher&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="E06-style.css">
     </head>
     <body>
 
-        <div id="topRow">
-            <!--Yläpalkki jossa linkitys githubiin ja linkediniin-->
-            <a href="www.linkedin.com/in/noora-kuorikoski">LinkedIn</a>
-            <div id="otsikko">CV</div>
-            <a href="https://github.com/nooraelina">GitHub</a>
-        </div>
-
-        <div id="top">
+        <div class="top">
             <!--sis. bannerikuvan, otsikon, pienen alainfon-->
+            <div class="bigtext">CURRICULUM VITAE</div>
             <img src="img/noora.png" alt="cvkuva" class="responsive" id="omakuva">
+            <br>
+            <span class="intro">Noora Kuorikoski</span>
+            <br>
+            <span class="intro">Tieto- ja viestintätekniikan insinööriopiskelija</span>
+            <br>
+            <span class="intro">Lähihoitaja, ylioppilas</span>
+            
+        </div>
+
+        <div class="flexbox">
+            <div>
+                <a href="https://www.linkedin.com/in/noora-kuorikoski" class="fleximg">
+                    <div class="img-header" style="background-image: url(img/laptop.jpg)">
+                        <div class="img-content">
+                            <span class="headeri">LinkedIn</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a href="https://github.com/nooraelina" class="fleximg">
+                    <div class="img-header" style="background-image: url(img/code.jpg)">
+                        <div class="img-content">
+                            <span class="headeri">GitHub</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a href="https://github.com/nooraelina/Web-tekniikoiden-perusteet" class="fleximg">
+                    <div class="img-header" style="background-image: url(img/webdesign.jpg)">
+                        <div class="img-content">
+                            <span class="headeri">Web-opintojakso</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a href="#" class="fleximg">
+                    <div class="img-header" style="background-image: url(img/spring.jpg)">
+                        <div class="img-content">
+                            <span class="headeri">Esimerkki</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
         </div>
 
-        <div id="lowercontainer">
-            <div id="leftside" class="column">
+        <div class="flexbox">
+            <div id="leftside" class="column" style="max-width: 400px;">
                 <!--sis. perustietoa-->
                 <h1>Noora Kuorikoski</h1>
-                <p>dfhgfdhhgfdh </p>
+                <p>Olen päätoiminen opiskelija Turun ammattikorkeakoulussa.</p>
+                <p>Työkokemukseni koostuu lähihoitajan töistä (vuodet 2015 – 2019)</p>
+                
+                <p><h2>Koulutus</h2>
+                    
+                    Tieto- ja viestintätekniikan insinööri<br>
+                    Turun ammattikorkeakoulu<br>
+                    elo 2018 – 2022<br>
+                    <br>
+                    Sosiaali- ja terveysalan tutkinto + lukio<br>
+                    Keski-Pohjanmaan ammattiopisto<br>
+                    elo 2013 – heinä 2017<br>
+                    </p>
+
+                <p><h2>Kielet</h2>
+                    Suomi - Äidinkieli<br>
+                    Englanti - Hyvä
+                    </p>
             </div>
             
-            <div id="rightside" class="column">
+            <div id="rightside" class="column" style="max-width: 400px;">
                 <!--sis. esim työkokemus yms-->
 
                 <h2>Taidot</h2>
@@ -87,14 +149,6 @@
                 
 
             </div>
-        </div>
-        <div id="down">
-            <!--sis. kuvagalleria-->
-
-        </div>
-
-        <div id="under">
-            <!--sis. alalinkit jne (tarviiko?)-->
         </div>
 
         <!--Vikaksi scripti jotta sivu lukee eka id jne ja osaa sitten yhdistää tänne.-->
