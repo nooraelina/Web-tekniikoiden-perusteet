@@ -1,8 +1,23 @@
-body, html {
+body {
+    --accent-color: #b48d92;
+    --background-color: white;
+    --text-color: black;
+    --button-text-color: var(--background-color);
+    --transition-delay: .9s;
+
     height: 100%;
     margin: 0px;
     color: rgb(20, 20, 20);
     font-family: 'Open Sans', sans-serif;
+
+    transition: var(--transition-delay);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+body.dark {
+    --accent-color: #d6bbbe;
+    --background-color: rgba(14, 14, 14, 0.9);
+    --text-color: rgb(218, 218, 218);
 }
 .responsive { /*Makes the image responsive*/
     max-width: 100%;
@@ -10,7 +25,7 @@ body, html {
 }
 #omakuva {
     border-radius: 50%;
-    margin-top: 2vw;
+    margin-top: 1vw;
     margin-bottom: 2vW;
     max-width: 150px;
     border: 2px solid #d6bbbe;
@@ -22,8 +37,30 @@ a:visited {
     text-decoration: none;
     color: black;
 }
-a:hover {
-    text-decoration: rgb(241, 237, 237);
+.theme-toggle-button {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+  
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+    transition: var(--transition-delay);
+    transform: scale(1);
+}  
+.theme-toggle-button .icon {
+    margin-right: .5em;
+}
+.theme-toggle-button:hover, .theme-toggle-button:focus {
+    transform: scale(1.1);
 }
 #otsikko {
     display: inline-block;
@@ -41,7 +78,7 @@ h1 {
 h2 {
     font-family: 'Dosis', sans-serif;
     font-weight: normal;
-    background-color: #f0e5e6;
+    background-color: #d6bbbe;
     color: black;
     padding: 4px;
     letter-spacing: 2px;
@@ -87,6 +124,13 @@ span.intro {
     flex: 25%;
     max-width: 25%;
     text-align: center;
+}
+.button-img {
+    transition: var(--transition-delay);
+}
+.button-img:hover, .button-img:focus {
+    transform: scale(1.05);
+    border: none;
 }
 .img-header {
     position: relative;
@@ -148,5 +192,11 @@ span.intro {
     }
     #leftside {
         text-align: left;
+    }
+    .button-img {
+        transition: none;
+    }
+    .button-img:hover, .button-img:focus {
+        transform: none;
     }
 }

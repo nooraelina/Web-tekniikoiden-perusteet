@@ -1,5 +1,3 @@
-// tällä jaotellaan
-//#region 
-let etuNimi = "Noora";
-//#endregion
-console.log("Hello World!");
+document.querySelector(".theme-toggle-button").addEventListener("click", () => {
+    document.body.classList.toggle("dark")
+})
